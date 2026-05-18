@@ -8,12 +8,12 @@
 <body>
     <h1>Nuestras habilidades</h1>
     <P th:if="${skill.isEmpty()}"></P>
-    <ul th:if="!${skill.isEmpty()}">
+    <ul th:if="${!skill.isEmpty()}">
         <li th:each="skill:${ skills }" th:text="${skill}">Skill</li>
     </ul>
     <h1>Nuestras habilidades2</h1>
     <P th:if="${skill2.isEmpty()}"></P>
-    <ul th:if="!${skill2.isEmpty()}">
+    <ul th:if="${!skill2.isEmpty()}">
         <li th:each="skill:${ skills2 }" th:text="${skill}">Skill</li>
     </ul>
 </body>
